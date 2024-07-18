@@ -16,7 +16,7 @@ public class SortMap {
         // sort on the basics of value before java-1.8
 
         // store entry value into the list
-        List<Map.Entry<Integer,String>> list1= new ArrayList<>(map1.entrySet());
+            List<Map.Entry<Integer,String>> list1= new ArrayList<>(map1.entrySet());
         Collections.sort(list1,(entry1,entry2)->{
             return entry1.getValue().compareTo(entry2.getValue());
         });

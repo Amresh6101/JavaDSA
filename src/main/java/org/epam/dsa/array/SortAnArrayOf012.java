@@ -21,12 +21,16 @@ public class SortAnArrayOf012 {
                 mid++;
 
             } else if (arr[mid]==2) {
+                // swap arr[mid] and arr[high] and high--;
                 int temp=arr[mid];
                 arr[mid]=arr[high];
                 arr[high]=temp;
                 high--;
             }
             else{
+                // swap arr mid and low
+                // low ++;
+                // mid++;
                 int temp=arr[mid];
                 arr[mid]=arr[low];
                 arr[low]=temp;
